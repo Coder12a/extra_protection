@@ -58,7 +58,7 @@ local function punishment_teleport()
 end
 
 local function punishment_damage()
-	local damage = tonumber(minetest.settings:get("latency_protection.damage")) or 3
+	local damage = tonumber(minetest.settings:get("latency_protection.damage")) or 16
 	
 	minetest.register_on_joinplayer(function(player)
 		players_position[player:get_player_name()] = minetest.get_us_time()

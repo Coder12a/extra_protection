@@ -39,14 +39,14 @@ If the function is called too fast the player will be teleport or damaged.
 `time_max` is read in microseconds.
 
 ```lua
-latency_protection.time_max = 2000
+latency_protection.time_max = 10000
 ```
 
 Damage amount to apply to the player.   
 This only works if punishment is set to damage.
 
 ```lua
-latency_protection.damage = 3
+latency_protection.damage = 16
 ```
 
 Set what type of punishment will be given to a player:
