@@ -93,3 +93,7 @@ if minetest.settings:get("latency_protection.punishment") == "teleport" then
 else
 	punishment_damage()
 end
+
+if minetest.settings:get_bool("log_mods") then
+	minetest.log("action", "[Latency Protection] Loaded.")
+end
